@@ -47,7 +47,7 @@ public class ProductService {
 
     public List<Product> getFeaturedProducts(){
         try{
-            List<Integer> ids= Arrays.asList(95, 98, 92);
+            List<Integer> ids= Arrays.asList( 2,5,6);
             return productDao.findByIdIn(ids);
         }catch (Exception e){
             logger.error("Error retrieving featured products", e.getMessage(), e);
